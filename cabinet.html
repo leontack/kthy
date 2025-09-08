@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Кабінет</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Особистий Кабінет</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="cabinet.html">Кабінет</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Ваш баланс: <span id="balance">$100.00</span></p>
+    <button onclick="withdrawMoney()">Вивести гроші</button>
+    <div id="withdraw-form" style="display:none;">
+      <label>Метод:</label>
+      <select id="method">
+        <option value="paypal">PayPal</option>
+        <option value="card">Карта</option>
+      </select><br>
+      <label>Реквізити:</label>
+      <input type="text" id="account"><br>
+      <button onclick="submitWithdraw()">Надіслати</button>
+    </div>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
